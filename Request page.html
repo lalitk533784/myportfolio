@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new</title>
+    <style>
+        body{
+            background-image: url(https://scontent-pnq1-2.xx.fbcdn.net/v/t39.30808-6/321682742_1543316742812623_499973080187789931_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=xMR25CgEqaAAX_Rcyb8&_nc_ht=scontent-pnq1-2.xx&oh=00_AfBn3iQTlXMD6hRJGE_Mm3igzK8ibsrV5WM_enDlkRpYQg&oe=63BA3F14);
+            background-size: cover;
+        }
+        .top{
+            margin-left: 100px;
+            margin-top: 50px;
+            line-height: 20px;
+        }
+        h1::first-letter{
+            color: white;
+            font-size: 80px;
+        }
+        .part1{
+            background-color: rgba(255, 255, 255, 0.233);
+            width: 900px;
+            text-indent: 80px;
+            height: 500px;
+            padding-top: 20px;
+            
+        }
+        .part2{
+            background-color: rgba(0, 0, 255, 0.237);
+            width: 500px;
+            text-indent: 80px;
+            padding-top: 20px;
+        }
+        .part3:hover{
+            background-color: blue;
+            color: white;
+            text-decoration: underline red;
+            
+        }
+        .part2:hover{
+            background-color: blue;
+            color: white;
+        }
+        main{
+            display: flex;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .part1:hover{
+            background-color: white;
+            color: blue;
+            
+        }
+        
+        .f1{
+            display: flex;
+        }
+        .text{
+            text-decoration:underline
+        }
+        .text:hover{
+            font-size: x-large;
+            text-decoration: overline;
+            text-shadow: 3px 0px aquamarine;
+            letter-spacing: 5px;
+        }
+        .message{
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            background-color: rgba(176, 196, 222, 0.485);
+            border-radius: 25px;
+            border: hidden;
+        }
+        .message:hover{
+            background-color: black;
+            color: white;
+            font-size: larger;
+            width: 700px;
+            height: 100px;
+        }
+        .input{
+            
+            border: hidden;
+            border-radius: 25px;
+            
+            background-color: rgba(247, 42, 20, 0.227);
+            color: white;
+            text-align: center;
+            font-size: larger;
+        }
+        .input:hover{
+            background-color: black;
+            height: 30px;
+            width: 300px;
+        }
+        .bt{
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+            width: 80px;
+            height: 30px;
+
+        }
+        .bt:hover{
+            background-color: blue;
+            letter-spacing: 15px;
+            width: 100px;
+        }
+        h1, h3{
+            color: white;
+        }
+        th{
+            text-align: left;
+            padding-left: 30px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1>Connect with us</h1>
+        <h3>We would love to respond to you quries and help you succeed<br>Feel free to got in touch with us.</h3>
+    </div>
+    <main>
+
+        <div class="part1">
+            <h2>Send your request</h2>
+                <div class="f1">
+                    <div class="box1">
+                        <p class="text">Name</p>
+                        <p><input class="input" type="text"></p>
+                        <p class="text">Email</p>
+                        <p class="text"><input class="input" type="email"></p>
+                    </div>
+                    <div class="box2">
+                        <p class="text">Phone</p>
+                        <p><input class="input" type="text"></p>
+                        <p class="text">Subject</p>
+                        <p><input class="input" type="sbbject"></p>
+                    </div>
+                </div>
+                <div class="f2">
+                    <p>Message</p>
+                    <p><input class="message" type="text" placeholder="Your message"></p>
+                </div>
+                <div class="send">
+                    <p><input class="bt" type="button" value="Send"></p>
+                </div>
+        </div>
+
+        <div class="part2">
+            <div class="part3">
+                <h2>Reach Us</h2>
+            </div>
+            <table>
+            <tr>
+            <th>Email</th>
+            <th>lalitkumarkoli321@gmail.com</th>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <th>+91 7357007445 </th>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <th> VPO Bileta <br> Teh Reni Dsit Alwar <br>Rajasthan 301414</th>
+            </tr>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>
