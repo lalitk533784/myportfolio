@@ -1,489 +1,486 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: cadetblue;
-            
-        }
+  <title>portfolio</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        nav ul {
-            padding: 0px;
-            list-style-type: none;
-            display: flex;
-            flex: 2;
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <style>
+    /* Custom styles */
+    body {
+      background-color: #c2e8f7;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-        }
+    }
 
-        nav li {
-            
-            display: inline;
-            text-align: right;
-            flex: 1;
-            color: white;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            border: 2px solid black;
-            border-radius: 20px;
-            height: fit-content;
-            width: 500px;
-            background-color: violet;
+    nav {
+      background: #a0d9fa !important;
+    }
 
-        }
-        nav li:hover{
-            background-color: aquamarine;
-            color: blue;
-        }
+    .box1 {
+      height: 90%;
+      background-image: url(/static/R1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-color: #3490c5; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-     
+    .box1>img {
+      margin-bottom: 20px;
+      border-radius: 50%;
 
-        a {
-            text-decoration: none;
-            margin:50px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color: white;
-            text-align: right;
-            align-items: flex-end;
-            
-        }
+    }
 
-        .nav1 {
-            background-color: burlywood;
-            display: flex;
-            height: 100;
+    .box1>h3 {
+      color: #fff;
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
 
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+    }
 
-        }
+    .icon >ul>li{
+      display: flex; /* Added to align icons horizontally */
+      justify-content: center; /* Added to center icons horizontally */
 
-        .icon {
-            margin-top: 70px;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            align-items: center;
-           
-
-        }
-
-        .b {
-            text-align: center;
-            color: white;
-            
-           
-
-        }
-
-        button {
-            background-color: green;
-            font-size: 15px;
-            padding: 10px 20px 10px 20px;
-            color: white;
-            align-items: center;
-            width: 150px;
-            border-radius: 20px;
-            
+      flex-direction: row;
+      margin-top: -30px;
 
 
-        }
-        .nav2{ text-align: left;
-           
-            width:40% ;
-            margin-top: 20px;
-            margin-left: 20px;
-            
-            
-        }
-      
-        th{
-            text-align: left;
-        }
-        .d{
-            text-align: right;
-            width: 60%;
-        }
-       
+    }
+    .icon >ul>li>a>img{
+     width:60px ;
+     height : 60px;
+     border-radius: 50%;
+     border: 10px solid white;
 
-      
-        .e{
-            text-align: left;
-            color: black;
-            width: 50%;
-            margin-right: 30px;
-        }
-        .f{
-            color: black;
-            
-        
 
-        }
-        progress{
-            
-            background-color:white;
-        
-        }
-        label{
-            padding: 20px ;
-            font-size: 20px;
-            color:black;
-        }
-        label:hover{
+    }
 
-        }
-        table tr td{
-            column-width: 100px;
-        }
-        .c{
-            border: 2px solid white;
-            margin-top: 50px;
-            display: flex;
-            padding-left: 20px;
-            background-color:lightcoral ;
-            border-radius: 20px ;
-        
-          height: fit-content;
-            width: 750px;
-            margin: 50px;
-            margin-left: 18%;
-            font-size: 15px;
-            box-shadow: 1px 2px 50px black;
-            
-        }
-       
-        .pro1{
-            width: 200px;
-            text-align: left;
-            margin-left: 50px;
-            margin-right: 50px;
-            margin-top: 25px;
-        }
 
-       
-        .pro2{
-            display: flex;
-            height: 200px;
-            width: 700px;
-            border: 2px solid white;
-            margin-left: 20%;
-            background-color: lightcoral;
-            border-radius: 20px ;
-            box-shadow:2px 10px  50px  black;
-            
 
-        }
-        .pro{
-            width: 250px;
-            text-align: left;
-            margin-left: 240px;
-            margin-right: 50px;
-            margin-top: 25px;
 
-        }
-        .skills{
-            text-align: center;
-            color: white;
-        }
-        .social{ height: 40px;
-            margin-left: 28%;
-            margin-bottom: 100px;
-            margin-top: 50px;
-            
-            
-            
-        }
-        .social1,.social2,.social3,.social4{
-            height: 30px;
-            width: 30px;
 
-        }
-        header{
-            background-color: violet;
-        }
-      .exp1{
-        height: 200px;
-        width: 800px;
-        
+    ul>li {
+      margin: 10px;
+    }
+
+    ul>li>img {
+      border-radius: 50%;
+    }
+
+    .box1>ul>li>a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background-color: #f3f8fa;
+      color: #3490c5;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .box1>ul>li>a:hover {
+      background-color: #3490c5;
+      color: #f3f8fa;
+    }
+    .coll>ul>li>a{
+        position: relative;
+        background-color: #f3f8fa;
+        border-radius: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .main{
+        width: 70%;
+        height: auto ;
         display: flex;
-        border-radius: 10px;
-        margin-left: 16%;
+        justify-content: center;
+        background-color: rgb(210, 242, 210);
+        border-radius: 20px;
 
-        
-      }
-      .exp2{
-        height: 200px;
-        width: 200px;
-        padding-left: 20px;
-        background-color: greenyellow;
-        text-align: center;
-      }
-      .exp3{
-        height: 200px ;
-        width: 600px;
-        padding-left: 20px;
-        background-color: white;
-        
-      }
-      .exp{
-        text-align: center;
-        margin-top: 50px
-      }
-           
-       .edu{
-        width: 800px;
-        height: 250px;
-        display: flex;
-        margin-left: 16%;
-       }
-       .edu2{
-        width: 200px;
-        height: 200px;
-        background-color: greenyellow;
-        padding-left: 20px;
-        text-align: center;
 
-       }
-       .edu3{
-        width: 600px;
-        height: 200px;
-        padding-left: 20px;
-        background-color: white;
-       
-       }
-       .edu1{
-        text-align: center;
-       }
-       .educ{
-        width: 800px;
-        height: 250px;
-        display: flex;
-        margin-left: 16%;
-        border-radius: 10px;
-       }
-       .educ1{
-        width: 200px;
-        height: 200px;
-        background-color: greenyellow;
-        padding-left: 20px;
-        text-align: center;
+    }
 
-       }
-       .educ2{
-        width: 600px;
-        height: 200px;
-        padding-left: 20px;
-        background-color: white;
-       
-       }
-       .map{
+    .main-left{
+        width: 50%;
+    }
+    .main-right{
+        width: 50%;
+
+    }
+    tr>td{
+        width: 5%;
+    }
+    .main-left~.main-right>p{
+        text-align: justify;
+    }
+    .main-box{
         width: 100%;
-       }
-       
-       
-       
-    </style>
+        padding: 50px;
+        margin-top: -50px;
+    }
+    .main-progress{
+      width: 70%;
+        height: auto ;
+
+        justify-content: center;
+        background-color: rgb(210, 242, 210);
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .skills{
+      margin-top: 30px;
+      text-align: center;
+    }
+    .main-exp{
+
+      width: 70%;
+      display: flex;
+      height: auto;
+      margin-top: 50px;
+    }
+    .main-expleft{
+      width: 20%;
+      height: auto;
+      background-color: chartreuse;
+      padding-top: 10px;
+      text-align: justify;
+    }
+    .main-expright{
+      width: 80%;
+      height: auto;
+      background-color: aliceblue;
+      padding-top: 10px;
+      text-align: justify;
+    }
+    .row-main {
+
+
+        width: 70%;
+        margin: auto;
+        background-color: bisque;
+        padding: 15px;
+        border-radius: 20px;
+
+      }
+      .main-contact{
+        width: 100%;
+        background-image: url(/static/map.png);
+        background-position: center;
+        padding-bottom: 50px;
+      }
+      /* .row-left {
+        width: 50%;
+      }
+      .row-right{
+        width: 50%;
+      } */
+
+
+  </style>
+
 </head>
 
 <body>
-    <header>
-    <div class="nav1">
-
-        <nav class="a">
-            <div class="nav2">
-                CREATIVE CV
-            </div>
-         
-            <div class="d">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg pb-5 ">
+      <div class="container-fluid">
+        <a class="navbar-brand pe-5 " href="#">CREATIVE CV</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse coll" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">SKILLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">EDUCATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">EXPERIENCE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div >
+      <div class="row justify-content-center">
+        <div >
+          <div class="box1">
+            <img src="" class="circlr-rounded mx-auto d-block" alt="..." height="150px" width="150px">
+            <h3>Lalit Kumar Koli</h3>
+            <h3>Fresher</h3>
             <ul>
-
-                <a href="#about">
-                    <li>ABOUT</li>
-                </a>
-                <a href="#skill">
-                    <li>SKILLS</li>
-                </a>
-                <a href="#portfolio">
-                    <li>PORTFOLIO</li>
-                </a>
-                <a href="#exprience">
-                    <li>EXPRIENCE</li>
-                </a>
-                <a href="#contact">
-                    <li>CONTACT</li>
-                </a>
+              <li>
+                <a href="#">Hire Me</a>
+              </li>
+              <li>
+                <a href="" target="_blank">Download CV</a>
+              </li>
             </ul>
+          </div>
+          <div class="icon">
+          <ul >
+            <li>
+              <a href="https://www.facebook.com/?stype=lo&jlou=AfdDeBApDjCgcxK_EixJur9iUPEpK01ALou-CMzrGkvoNYRtpVC-pQNVDeUjNOlmW0NitORo3AsK3R3aaH-PI6mWhnCxDERw9kp0hWCs0eDAYA&smuh=11320&lh=Ac_TLCHkYJf_PJr2cHc" target="_blank"><img src="https://i0.wp.com/upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png" alt="Facebook" height="50px" width="50px" class="circlr-rounded mx-auto d-block"></a>
+              <a href="https://www.linkedin.com/in/lalit-kumar-koli-59b292257/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/900px-LinkedIn_logo_initials.png?20140125013055" alt="Instagram" class="-circle-rounded mx-auto d-block" height="50px" width="50px"></a>
+              <a href="https://twitter.com/" target="_blank"><img src="https://th.bing.com/th/id/OIP.rLNTm2eWw6cRrPNfxMxnnwHaHa?pid=ImgDet&rs=1" alt="Twitter" class="circlr-rounded mx-auto d-block" height="50px" width="50px"></a>
+              <a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=AXo7B7WeKS7kU9tRva40kWrTnxPhq2ZFMd_vSvAMteect_A8d-dcTsmka1OaylfKDR4Df0gqqTtCtQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><img src="/static/google.jpg" alt="Google Plus" class="circlr-rounded mx-auto d-block" height="50px" width="50px"></a>
+            </li>
+          </ul>
         </div>
-
-        </nav>
-    </div>
-    </header>
-
-
-        <div class="b">
-            <img class=icon src="kumar.jpg" alt="">
-            <h2>Lalit Kumar Koli</h2>
-            <h3>Fressar </h3>
-            <a href="Request page.html" target="_blank"> <button>
-                    Hire Me
-                </button></a>
-            <a href="resume.html" target="_blank"> <button>
-                    Download CV
-                </button></a>
-
         </div>
-        <div class="social">
-            <a href="#"><img class="social1"src="R.png" alt=""></a>
-            <a href="#"> <img class="social2"src="Twitter.jpg" alt=""></a>
-            <a href="#"><img class="social3"src="nouveau-logo-google-plus-carre-petit.jpg" alt=""></a>
-            <a href="#"><img class="social4"src="New-Instagram-logo.jpg" alt=""></a>
-
-        </div>
-    </div>
-    <div class="c">
-        <div class="e" id="about">
-        <h2>About</h2>
-        <p>Hello' I am Lalit Kumar Koli , Fressar</p>
-        <p>
-            Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience
-        </p>
-        
-    </div>
-    <div class="f">
-        <h2>Basic Information</h2>
-        <table>
-            <tr>
-                <td>AGE</td>
-                <td>24</td>
-            </tr>
-            <tr>
-                <td>E-MAIL</td>
-                <td>lalitkumarkoli321@gmail.com</td>
-            </tr>
-            <tr>
-                <td>PHONE</td>
-                <td>+91 7357007445</td>
-            </tr>
-            <tr>
-                <td>ADDRESS</td>
-                <td>NSTI MUMBAI</td>
-            </tr>
-            <tr>
-                <td>LANGUAGE</td>
-                <td>Hindi,English</td>
-            </tr>
-        </table>
-    </div>
-    </div>
-
-    
-    <h2 class="skills" id="skill">
-        Personal Skills
-    </h2>
-<div class="pro2">
-    
-        <div class="pro1">
-        <label for="file">HTML</label>
-        <progress id="file" max="100" value="80">80%</progress>
-        <label for="file">CSS</label>
-        <progress id="file" max="100" value="60">60%</progress> 
-        <label for="file">BOOTSTRAP </label>
-        <progress id="file" max="100" value="10">10%</progress>
-    </div>
-        <div class="pro">
-        <label for="file">JAVASCRIPT</label>
-        <progress id="file" max="100" value="20">20%</progress>
-        <label for="file">SASS</label>
-        <progress id="file" max="100" value="30">30%</progress>
-        <label for="file">PHOTOSHOP</label>
-        <progress id="file" max="100" value="50">50%</progress>
-    
-    </div>
-</div>
-<div class="exp" id="exprience">
-    <h3>Work Experience</h3>
-</div>
-    <div class="exp1">
-        <div class="exp2">
-            <p>
-                SEP. 2018 - AUG 2022
-            </p>
-            <p>
-                CYBER CAFE 
-            </p>
-        </div>
-            <div class="exp3">
-                <p>
-                    CYBER CAFE
-                </p>
-                <p>
-                    A cybercafe is a type of business where computers are provided for accessing the internet,
-                     playing games, chatting with friends or doing other computer-related tasks. In most cases, 
-                     access to the computer and internet is charged based on time. There are many internet cafes
-                      located worldwide, and in some countries they are considered the primary form of internet
-                       access for people.
-                </p>
-           
-        </div>
-    </div>
-   
-        <div class="edu1">
-            <h3>
-                Education
-            </h3>
-        </div>
-        <div class="edu">
-            <div class="edu2">
-                <p>
-                    2020-present
-                </p>
-                <p>
-                    Bechelor's Degree
-                </p>
+      </div>
+      <div class="container-fluid main-box">
+        <div class="container-fluid main border border-primary border-3 shadow" id="about">
+            <div class="container-fluid main-left ">
+                <h1 class="border-bottom">About</h1>
+                <p>Hello' I am Lalit Kumar Koli , Fresher</p>
+                <p>Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience</p>
             </div>
-         <div class="edu3">
-            <p> Bechelor of Arts</p>
-            <p> Raj Rishi Bharthari Matsya University Alwar Rajasthan</p>
-            <p>Bachelor of Arts also known as BA is a three years undergraduate programme. Aspirants who have passed 10+2
-                 in any stream can take admission in this course. There are various BA specializations
-                 such as English, History, Hindi, Sociology, Political Science, Urdu, Economics, Tamil,
-                  Odia. At present, there are more than nine million students who are pursuing B.A programmes in India. After completion of 10+2, students pursue B.A (Bachelor of Arts) degree.</p>
-         </div>
+            <div class="container-fluid main-right">
+                <h1 class="border-bottom">
+                    Basic Information
 
-    </div>
-    
-    <div class="educ">
-        <div class="educ1">
-            <p>
-                2014-2016
-            </p>
-            <p>
-                High School
-            </p>
+                </h1>
+                <div class="table-responsive">
+                <table class="table table-borderless">
+
+                    <tr>
+                        <td>AGE</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>E-MAIL</td>
+                        <td>lalitkumarkoli321@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>PHONE</td>
+                        <td>+91 73570 07445</td>
+                    </tr>
+                    <tr>
+                        <td>ADDRESS</td>
+                        <td>NSTI MUMBAI</td>
+                    </tr>
+                    <tr><td>LANGUAGE</td>
+                        <td>Hindi,English</td>
+                    </tr>
+
+                </table>
+            </div>
+            </div>
+
         </div>
-     <div class="educ2">
-        <p> Science and Mathematics</p>
-        <p> Board of Secondry Rajasthan</p>
-        <p>NCERT solutions for class 12 Science 
-            consist of solutions for all the chapters
-             of Physics, Chemistry, Maths and Biology,
-              English, Hindi, and other subjects, exercise-wise. 
-              These solutions are prepared by our subject experts
-               and teachers. Keeping in mind the understanding 
-               level of each student, these solutions are prepared 
-               so that students find it easy to learn. LearnCBSE
-                is providing here the best solutions of each and
-                 every questions with complete methods and steps.</p>
-     </div>
-
-</div>
-<div class="contact4">
-<img class= map src="map.png" alt=""> 
-<a href="Request page.html" target="_blank" id="contact"> Contact us </a>
 
 
-</div>
+      </div>
+      <div class="skills" id="skills"><h1>Personal Skills</h1></div>
+      <div class="container-fluid main-progress">
+
+        <div class="container-fluid">
+          <h6>HTML</h6>
+          <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar text-bg-primary" style="width: 100%">100%</div>
+          </div>
+          <h6>CSS</h6>
+          <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar text-bg-danger" style="width: 95%">95%</div>
+          </div>
+          <h6>JAVASCRIPT</h6>
+          <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar text-bg-warning" style="width: 80%">80%</div>
+          </div>
+          <h6>BOOTSTRAP</h6>
+          <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar text-bg-info" style="width: 100%">100%</div>
+          </div>
+          <h6>PYTHON</h6>
+          <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar text-bg-secondary" style="width: 75%">75%</div>
+          </div>
+        </div>
+      </div>
+        <div class="skills" id="experience">
+          <h1>Work Experience</h1>
+        </div>
+        <div class="container-fluid main-exp">
+
+          <div class="container-fluid main-expleft" >
+            <h4>SEP. 2018 - AUG 2022</h4>
+            <h4>CYBER CAFE</h4>
+          </div>
+          <div class="container-fluid main-expright">
+            <h3>CYBER CAFE</h3>
+            <p>A cybercafe is a type of business where computers are provided for accessing the internet, playing games, chatting with friends or doing other computer-related tasks. In most cases, access to the computer and internet is charged based on time. There are many internet cafes located worldwide, and in some countries they are considered the primary form of internet access for people.</p>
+          </div>
+        </div>
+
+        <div class="skills" id="education">
+          <h1>Education</h1>
+        </div>
+        <div class="container-fluid main-exp">
+
+          <div class="container-fluid main-expleft" >
+            <h4>SEP. 2022 - Present</h4>
+            <h4>ADIT</h4>
+          </div>
+          <div class="container-fluid main-expright">
+            <h4>ADIT(Advanced Diploma in Information Technology & Cloud Computing)</h4>
+            <h4>NSTI MUMBAI</h4>
+            <p>Cloud computing is an education sought by those interested in information and technology and the application of remote storage system integration in business and consumer settings. Information regarding networking and server application supplement basic software knowledge to often makes up the bulk of this program.</p>
+          </div>
+        </div>
+        <div class="container-fluid main-exp">
+          <div class="container-fluid main-expleft" >
+            <h4>FEB. 2021 - Present</h4>
+            <h4>B.A </h4>
+          </div>
+          <div class="container-fluid main-expright">
+            <h4>Bechelor of Arts</h4>
+            <h4>Raj Rishi Bharthari Matsya University Alwar, Rajasthan </h4>
+            <p>Bachelor of Arts (BA) is a 3 years undergraduate degree course that focuses on various disciplines like English, History, Political Science, Geography etc. Candidates can pursue a BA general or BA Hons program as per choice and also on the marks obtained at their +2 board exams. BA general program focuses on an overview of primary subjects whereas BA Hons program focuses on a particular specialization.</p>
+          </div>
+        </div>
+        <div class="container-fluid main-exp">
+          <div class="container-fluid main-expleft" >
+            <h4>SEP. 2020 - FEB 2022</h4>
+            <h4>ITI  </h4>
+          </div>
+          <div class="container-fluid main-expright">
+            <h4>ITI in COPA (Computer Operator & Programming Assitant)</h4>
+            <h4>NCVT BOARD </h4>
+            <p>ITI COPA is one of the best non-engineering vocational courses related to computers and the Internet.
+
+              It is a 1-year regular ITI course offered by Industrial Training Institute to train students to work at the industrial level and whose goal is to spread technical knowledge about computers to a large number of people.</p>
+          </div>
+        </div>
+
+        <div class="container-fluid main-exp">
+          <div class="container-fluid main-expleft" >
+            <h4>JULY 2015 - JUNE 2016</h4>
+            <h4>SENIOR </h4>
+          </div>
+          <div class="container-fluid main-expright">
+            <h4>Science and Mathematics</h4>
+            <h4>Board of Secondary Education Rajasthan </h4>
+            <p>NCERT solutions for class 12 Science consist of solutions for all the chapters of Physics, Chemistry, Maths and Biology, English, Hindi, and other subjects, exercise-wise. These solutions are prepared by our subject experts and teachers. Keeping in mind the understanding level of each student, these solutions are prepared so that students find it easy to learn. LearnCBSE is providing here the best solutions of each and every questions with complete methods and steps.</p>
+          </div>
+        </div>
+
+        </div>
+        <div class="container-fluid main-contact mb-5" id="contactus">
+          <div class="skills">
+            <h1>Contact Us</h1>
+          </div>
+          <div class="row-main container-fluid">
+            <div class="row-left container-fluid">
+              <table class="table">
+                <tr>
+                  <td>
+                    <h2>Send Your request</h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h3>Name</h3>
+                  </td>
+                  <td>
+                    <h3>Phone</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="abc" class="form-control">
+                  </td>
+                  <td>
+                    <input type="text" name="Email" class="form-control">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h3>Email</h3>
+                  </td>
+                  <td>
+                    <h3>Subject</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="email" class="form-control">
+                  </td>
+                  <td>
+                    <input type="text" name="subject" class="form-control">
+                  </td>
+                </tr>
+              </table>
+              <table class="table">
+                <tr>
+                  <td>
+                    <h3>Message</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td><textarea name="message" id="" cols="45" rows="5" class="form-control"></textarea></td>
+                </tr>
+              </table>
+              <button class="btn btn-primary">Submit</button>
+            </div>
+
+            <div class="col row-right" bis_skin_checked="1">
+              <h2 class="text-center">Reach Us</h2>
+              <table class="table table-borderless">
+                <tr>
+                  <td>E-mail</td>
+                  <td>lalitkumarkoli321@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Phone</td>
+                  <td>+91 73570 07445</td>
+                </tr>
+                <tr>
+                  <td>Address</td>
+                  <td>VPO - Bileta Teh Reni Dsit Alwar Rajasthan -301414</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  </div>
 </body>
 
 </html>
